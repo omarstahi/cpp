@@ -6,7 +6,7 @@ Write a function that returns true if every instance of the first letter occurs 
 #include <iostream>
 using namespace std;
 
-void firstBeforeSecond(string s, char c1, char c2){
+bool firstBeforeSecond(string s, char c1, char c2){
     int index1, index2;
     for(int i = 0; i < size(s); i++){
         if(s[i] == c1)
@@ -19,12 +19,14 @@ void firstBeforeSecond(string s, char c1, char c2){
             break;
         }
     }
-    cout << index2;
+    if(index1 < index2)
+        return true;
+    return false;
 }
 
 int main()
 {
-     firstBeforeSecond("a rabbit jumps joyfully", 'a', 'j');
+     cout << firstBeforeSecond("a rabbit jumps joyfully", 'a', 'j');
 
    return 0;
 }
