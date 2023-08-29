@@ -3,6 +3,7 @@ You are given three inputs: a string, one letter, and a second letter.
 
 Write a function that returns true if every instance of the first letter occurs before every instance of the second letter.#include <iostream>
 */
+#include <iostream>
 using namespace std;
 
 void firstBeforeSecond(string s, char c1, char c2){
