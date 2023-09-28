@@ -1,2 +1,1 @@
-# some interesting c++ stuff 🙂
-## with some problems solution in edabit level hard
+# training whit some problems solution in edabit level hard using c++ and java 🙂
